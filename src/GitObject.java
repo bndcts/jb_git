@@ -10,6 +10,10 @@ public abstract class GitObject {
         return hash;
     }
 
+    public boolean trueEquals(Object obj) {
+        return this == obj;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof GitObject) {
